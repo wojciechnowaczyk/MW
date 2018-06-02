@@ -1,0 +1,121 @@
+.MainHeader {
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-attachment: fixed;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.InformationSection {
+  border: solid 5px green;
+  height: 300px;
+}
+
+.EventsSection {
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+}
+
+.PartnersSection {
+  height: 300px;
+  border: solid 5px blue;
+}
+
+.MeetnightLogotypeStyle {
+  width: 50%;
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.NavbarMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogotypeWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MenuButton {
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: black;
+  margin: 20px;
+}
+
+.EventUpperWrapper {
+  width: 100%;
+  height: 400px;
+}
+
+.EventLeftColumn {
+  width: 65%;
+  height: 400px;
+  float: left;
+}
+
+.EventRightColumn {
+  width: 25%;
+  margin-right: 10%;
+  margin-top: 5%;
+  height: 90%;
+  float: left;
+  box-shadow: 20px 20px 50px grey;
+  background: rgb(255,255,255);
+}
+
+.EventBottomWrapper {
+  width: 55%;
+  height: 200px;
+  margin: 50px 15% 50px 30%;
+  box-shadow: 20px 20px 50px grey;
+  background: rgb(255,255,255);
+}
+
+.EventUpperDiv {
+  width: 100%;
+  height: 200px;
+}
+
+.EventBottomDiv {
+  width: 70%;
+  height: 200px;
+  margin-left: 20%;
+  box-shadow: 20px 20px 50px grey;
+  background: rgb(255,255,255);
+}
+
+.EventMainHeader {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+
+}
+
+.EventDate {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.EventMoreButton {
+  width: 30%;
+  margin-left: 35%;
+  padding: 5px;
+  background: rgba(80,80,80,0.5);
+}
