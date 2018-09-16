@@ -1,5 +1,8 @@
+body{
+  margin: 0px;
+}
 .MainHeader {
-  height: 700px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   background-attachment: fixed;
   flex-direction: column;
@@ -15,7 +18,7 @@
 }
 
 .EventsSection {
-  height: 800px;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
 }
@@ -56,72 +59,79 @@
   margin: 20px;
 }
 
-.EventUpperWrapper {
-  width: 100%;
-  height: 400px;
-}
-
-.EventLeftColumn {
-  width: 65%;
-  height: 400px;
-  float: left;
-}
-
-.EventRightColumn {
-  width: 25%;
-  margin-right: 10%;
+.EventBox {
+  width: 25.3333%;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 5%;
   margin-top: 5%;
   height: 90%;
   float: left;
   box-shadow: 20px 20px 50px grey;
   background: rgb(255,255,255);
-}
-
-.EventBottomWrapper {
-  width: 55%;
-  height: 200px;
-  margin: 50px 15% 50px 30%;
-  box-shadow: 20px 20px 50px grey;
-  background: rgb(255,255,255);
-}
-
-.EventUpperDiv {
-  width: 100%;
-  height: 200px;
-}
-
-.EventBottomDiv {
-  width: 70%;
-  height: 200px;
-  margin-left: 20%;
-  box-shadow: 20px 20px 50px grey;
-  background: rgb(255,255,255);
+  padding-bottom: 2%;
+  border-top: 3px solid #337AC3;
 }
 
 .EventMainHeader {
   width: 100%;
-  text-align: left;
-  font-size: 20px;
+  text-align: center;
+  font-size: 30px;
   padding: 10px;
+  font-family: 'VT323', monospace;
 
 }
 
 .EventDate {
   width: 100%;
-  text-align: left;
-  font-size: 15px;
-  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Dosis', sans-serif;
 }
 
-.EventMoreButton {
-  width: 30%;
-  margin-left: 35%;
+.EventButton {
+  width: 50%;
+  margin-left: 25%;
   padding: 5px;
-  background: rgba(80,80,80,0.5);
+  background: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  border: 4px solid #337AC3;
+  color: #337AC3;
+  border-radius: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+}
+
+.EventSocials{
+  width: 100%;
+  overflow: hidden;
+}
+
+.EventsSocialsIcon{
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.EventsSocialsIcon a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EventsSocialsIcon a img {
+  width: 65%;
+  filter: grayscale(100%);
+}
+
+.EventsSocialsIcon a img:hover{
+  filter: none;
 }
 
 .TestimonialsSection{
-  height: 200px;
+  height: 300px;
   background:red;
 }
 .PrevButton, .NextButton{
@@ -136,7 +146,7 @@
 * {box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+.SlidesContainer {
   width: 80%;
   height: 100%;
   position: relative;
@@ -150,7 +160,7 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.Previous, .Next {
   cursor: pointer;
   width: 10%;
   float: left;
@@ -166,13 +176,13 @@
 }
 
 /* Position the "next button" to the right */
-.next {
+.Next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.Previous:hover, .Next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -197,18 +207,17 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.Square {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
-  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .Dot:hover {
   background-color: #717171;
 }
 
@@ -230,7 +239,7 @@
   to {opacity: 1}
 }
 
-.DotsContainer{
+.SquareContainer{
   width: 100%;
   height: 10%;
   bottom: 0px;
@@ -241,4 +250,72 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+}
+
+
+.ClientsHeader{
+  width: 100%;
+  text-align: center;
+}
+
+.ClientsRow{
+  width: 100%;
+  height: 150px;
+}
+
+.Client{
+  width: 25%;
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Client img {
+  max-width: 60%;
+  padding: 10%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.Client img:hover {
+  filter: none;
+}
+
+.SocialMediaSection{
+  width: 100%;
+  padding-top: 100px;
+}
+
+.SocialMediaBox{
+  width:40%;
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+
+.EmbeddedTweet--edge{
+  height: 500px;
+}
+
+.twitter-tweet .twitter-tweet-rendered{
+  height: 500px;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
