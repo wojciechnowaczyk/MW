@@ -1,7 +1,20 @@
 body{
   margin: 0px;
   font-family: 'Lekton', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2
 }
+
+a{
+  color: #337AC3;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #337AC3;
+}
+
 .MainHeader {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
@@ -13,15 +26,63 @@ body{
   width: 100%;
 }
 
-.InformationSection {
-  border: solid 5px green;
-  height: 300px;
+#MainVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    position: absolute;
+}
+
+.AboutUsSection{
+  width: 100%;
+  height: 100vh;
+}
+
+.AboutUsLeft{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.AboutUsRight{
+  width: 50%;
+  float: right;
+  height: 100%;
+  background-color: #337AC3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app{
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .EventsSection {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
+  height: 100vh;
 }
 
 .PartnersSection {
@@ -30,8 +91,10 @@ body{
 }
 
 .MeetnightLogotypeStyle {
-  width: 50%;
-  background: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -52,12 +115,17 @@ body{
 }
 
 .MenuButton {
-  background: #ffffff;
+
   padding: 10px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  color: black;
   margin: 20px;
+  background: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  border: 4px solid #337AC3;
+  color: #337AC3;
+  border-radius: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
 }
 
 .EventBox {
@@ -66,7 +134,7 @@ body{
   margin-left: 4%;
   margin-bottom: 5%;
   margin-top: 5%;
-  height: 90%;
+  height: 50%;
   float: left;
   box-shadow: 20px 20px 50px grey;
   background: rgb(255,255,255);
@@ -284,6 +352,9 @@ body{
   font-size: 20px;
 }
 
+.ClientsSection{
+  height: 100vh;
+}
 
 .ClientsHeader{
   width: 100%;
@@ -318,16 +389,24 @@ body{
 .SocialMediaSection{
   width: 100%;
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 10%;
 }
 
 .SocialMediaBox{
-  width:40%;
+  border-top: 3px solid #337AC3;
+  width:400px;
   float: left;
   height: 100%;
   display: flex;
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
+  box-shadow: 20px 20px 50px grey;
+  background: rgb(255,255,255);
 }
 
 
@@ -340,10 +419,159 @@ body{
   height: 500px;
 }
 
-footer{
+.ContactSection{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactBox{
+  width: 400px;
+  border-top: 3px solid #337AC3;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
+  box-shadow: 20px 20px 50px grey;
+  background: rgb(255,255,255);
+  padding-bottom: 5%;
+}
+
+.ContactInfo{
   width: 100%;
-  height: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.ContactPhoto{
+  margin-top: 10%;
+  width: 200px;
+}
+
+.MainText{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.EventInfo{
+  width:100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.EventInfoLeft{
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: #337AC3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.EventInfoRight{
+  width: 50%;
+  float: right;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.White{
+  color: #ffffff;
+}
+
+.EventsTitle{
+  margin-top: 5%;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+}
+.Agenda{
+  color: #ffffff;
+  padding: 5%;
+  text-align: left;
+}
+
+.Partner{
+  max-width: 80% !important;
+}
+.Place{
+  width: 100%;
+}
+.Community{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CommunityBox{
+  width: 12.5%;
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CommunityBox img {
+  max-width: 60%;
+  padding: 10%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.CommunityBox img:hover {
+  filter: none;
+}
+
+.EventButtonRegister{
+  width: 10%;
+  padding: 5px;
+  background: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  border: 4px solid #337AC3;
+  color: #337AC3;
+  border-radius: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.EventTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.EventRow{
+  height: auto;
+}
+
+.EventPage{
+  width: 20%;
+}
+footer{
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  padding-right: 5%;
+  align-items: center;
+  background-color: #337AC3;
+  font-family: 'Nothing You Could Do', cursive;
 }

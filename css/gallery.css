@@ -1,0 +1,254 @@
+body{
+  margin: 0px;
+  font-family: 'Lekton', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
+  width: 100%;
+}
+
+a{
+  color: #337AC3;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #337AC3;
+}
+
+.MainHeader {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-attachment: fixed;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#MainVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.MainGallery{
+  width: 100%;
+}
+
+.GalleryRow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.GalleryThumbnail{
+  width: 20%;
+  margin: 4%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  float: left;
+  box-shadow: 20px 20px 50px grey;
+  border-top: 3px solid #337AC3;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+.Title{
+  width: 100%;
+  background:rgba(255,255,255,0.7);
+  font-size: 25px;
+  font-weight: bold;
+}
+.GalleryThumbnail:hover{
+  width: 40%;
+  height: 400px;
+}
+
+#Poznan0116{
+  background-image: url('../assets/gallery/poznan/1.jpg');
+}
+
+#Warszawa0216{
+  background-image: url('../assets/gallery/poznan/2.jpg');
+}
+
+#Poznan0316{
+  background-image: url('../assets/gallery/poznan/3.jpg');
+}
+
+#Poznan0117{
+  background-image: url('../assets/gallery/poznan/4.jpg');
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 20%;
+}
+
+.column img{
+  height: 200px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: #337AC3;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  color: #337AC3;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer{
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  padding-right: 5%;
+  align-items: center;
+  background-color: #337AC3;
+  font-family: 'Nothing You Could Do', cursive;
+}

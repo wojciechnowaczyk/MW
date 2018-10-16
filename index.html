@@ -5,25 +5,50 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=VT323&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lekton&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
   <script src="js/main.js"></script>
+
+  <script src="js/TypingCarousel.js"></script>
+
 
 
 </head>
 <body>
 
   <div class="MainHeader">
+    <video autoplay muted loop id="MainVideo">
+      <source src="./assets/video/Space.mov">
+    </video>
+        <div class="content">
           <div class="LogotypeWrapper">
-            <div class="MeetnightLogotypeStyle" alt="Meetnight Logotype" ></div>
+            <div class="MeetnightLogotypeStyle" alt="Meetnight Logotype" >
+              <img src="./assets/img/logotypes/MeetnightLogo.png"/>
+            </div>
           </div>
           <div class="NavbarMenu">
-            <span class="MenuButton">About</span>
-            <span class="MenuButton">Events</span>
-            <span class="MenuButton">Gallery</span>
-            <span class="MenuButton">Contact</span>
+            <span class="MenuButton"><a href="#AboutUs">About</a></span>
+            <span class="MenuButton"><a href="#Events">Events</a></span>
+            <span class="MenuButton"><a href="./gallery/gallery.html">Gallery</a></span>
+            <span class="MenuButton"><a href="#Contact">Contact</a></span>
           </div>
+        </div>
     </div>
+    <div class="AboutUsSection" id="AboutUs">
+      <div class="AboutUsLeft">
+        Together we’d like to destroy the walls between employers and employees, corporations and startups or career and fun. Not enough? Ok, honestly, we want to destroy the wall between day and night too. In our space you could spend some time with your future friends. You can ask them about work, of course. Or you could just lie on comfortable bean bag and check how your future boss deals with console game. Are you sick of stalls, leaflets and suits? Just come and find out how we’ll do it!
+      </div>
+      <div class="AboutUsRight">
+        <div id="app">
 
-    <div class="EventsSection">
+          <span
+             class="txt-rotate"
+             data-period="2000"
+             data-rotate='[ "Job.", "Fun.", "Beer.", "Pizza.", "Music.", "Party." ]'></span>
+
+        </div>
+      </div>
+    </div>
+    <div class="EventsSection" id="Events">
       <div class="ClientsHeader">
         <h1 class="MainPageHeader">Events</h1>
       </div>
@@ -49,7 +74,7 @@
                 Register
               </div>
               <div class="EventButton">
-                More
+                <a href="./events/poznan.html">More</a>
               </div>
             </div>
 
@@ -104,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="ClientsHeader">
+    <div class="ClientsHeader" id="Testimonials">
       <h1 class="MainPageHeader">Testimonials</h1>
     </div>
     <div class="TestimonialsSection">
@@ -148,7 +173,7 @@
 
 
 </div>
-<div class="ClientsSection">
+<div class="ClientsSection" id="Clients">
   <div class="ClientsHeader">
     <h1 class="MainPageHeader">Our Clients</h1>
   </div>
@@ -181,17 +206,46 @@
     </div>
   </div>
 </div>
+<div class="ClientsHeader" id="Contact">
+  <h1 class="MainPageHeader">Contact</h1>
+</div>
+<div class="ContactInfo">
+  Do you have any questions? Don't hesitate to contact us! We're users of most social media sites, so it'll be probably the easiest and fastest way to catch us. Just use one of the icons right below! But if you prefer more official way, of course you can send us an email!
+</div>
+<div class="ContactSection">
+
+  <div class="ContactBox">
+    <img class="ContactPhoto" src="./assets/img/Radomski.jpg"/>
+    <div class="MainText">j.radomski@meetnight.pl</div>
+    <div class="EventsSocialsIcon">
+    <a href=""><img src="./assets/img/SocialsIcons/facebook.png" /></a>
+    </div>
+    <div class="EventsSocialsIcon">
+    <a href=""><img src="./assets/img/SocialsIcons/instagram.png" /></a>
+    </div>
+  </div>
+  <div class="ContactBox">
+    <img class="ContactPhoto" src="./assets/img/Nowaczyk.jpg"/>
+    <div class="MainText">w.nowaczyk@meetnight.pl</div>
+    <div class="EventsSocialsIcon">
+    <a href=""><img src="./assets/img/SocialsIcons/facebook.png" /></a>
+    </div>
+    <div class="EventsSocialsIcon">
+    <a href=""><img src="./assets/img/SocialsIcons/instagram.png" /></a>
+    </div>
+  </div>
+</div>
 <div class="SocialMediaSection">
   <div class="SocialMediaBox">
     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmeetnightpl%2F&tabs=timeline&width=400px&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400px" height="500px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
   </div>
   <div class="SocialMediaBox">
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BaRQISHHLZq/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BaRQISHHLZq/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Dziękujemy wszystkim za wczorajsze spotkanie! :) Do zobaczenia w kwietniu! #meetnight #polska #poland #wroclaw #it #job #conference #night #party #hr #programming #mergegirls</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Post udostępniony przez <a href="https://www.instagram.com/meetnightpl/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Meetnight</a> (@meetnightpl) <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-10-15T13:00:31+00:00">Paź 15, 2017 o 6:00 PDT</time></p></div></blockquote> <script async defer src="http://www.instagram.com/embed.js"></script>
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BaRQISHHLZq/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; height: 500px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BaRQISHHLZq/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Dziękujemy wszystkim za wczorajsze spotkanie! :) Do zobaczenia w kwietniu! #meetnight #polska #poland #wroclaw #it #job #conference #night #party #hr #programming #mergegirls</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Post udostępniony przez <a href="https://www.instagram.com/meetnightpl/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Meetnight</a> (@meetnightpl) <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-10-15T13:00:31+00:00">Paź 15, 2017 o 6:00 PDT</time></p></div></blockquote> <script async defer src="http://www.instagram.com/embed.js"></script>
     </div>
 
 </div>
 <footer>
-  <span>Made by Wojciech Nowaczyk</span>
+  Made by Wojciech Nowaczyk
 </footer>
 </body>
 </html>
