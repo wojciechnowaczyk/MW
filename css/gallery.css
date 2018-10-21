@@ -27,10 +27,19 @@ a:visited{
   width: 100%;
 }
 
+.ClientsHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #MainVideo {
-    right: 0;
-    bottom: 0;
-    height: 100vh;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .content {
@@ -90,15 +99,35 @@ a:visited{
 }
 
 #Warszawa0216{
-  background-image: url('../assets/gallery/poznan/2.jpg');
+  background-image: url('../assets/gallery/warszawa0216/2.jpg');
 }
 
 #Poznan0316{
-  background-image: url('../assets/gallery/poznan/3.jpg');
+  background-image: url('../assets/gallery/poznan0316/3.jpg');
 }
 
 #Poznan0117{
-  background-image: url('../assets/gallery/poznan/4.jpg');
+  background-image: url('../assets/gallery/poznan0117/4.jpg');
+}
+
+#Wroclaw0217{
+  background-image: url('../assets/gallery/wroclaw0217/4.jpg');
+}
+
+#Lodz0317{
+  background-image: url('../assets/gallery/lodz0317/4.jpg');
+}
+
+#Wroclaw0417{
+  background-image: url('../assets/gallery/wroclaw0417/4.jpg');
+}
+
+#Poznan0118{
+  background-image: url('../assets/gallery/poznan0118/4.jpg');
+}
+
+#Wroclaw0218{
+  background-image: url('../assets/gallery/wroclaw0218/4.jpg');
 }
 
 .row{
@@ -129,6 +158,8 @@ a:visited{
 .modal {
   display: none;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   padding-top: 20px;
   left: 0;
@@ -169,6 +200,7 @@ a:visited{
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  background-color: black;
 }
 
 /* Next & previous buttons */
@@ -188,6 +220,8 @@ a:visited{
   user-select: none;
   -webkit-user-select: none;
   color: #337AC3;
+  background-color: #ffffff;
+  padding-top: 25px;
 }
 
 /* Position the "next button" to the right */
@@ -198,7 +232,7 @@ a:visited{
 
 .prev {
   left: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 3px 3px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -250,4 +284,47 @@ footer{
   align-items: center;
   background-color: #337AC3;
   font-family: 'Nothing You Could Do', cursive;
+}
+@media only screen and (max-width: 1050px) {
+  body{
+    font-size: 3vh;
+    line-height: 1.2
+  }
+  .MainPageHeader{
+    width: 100%;
+    text-align: center;
+    font-size: 7vh;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .column{
+    width: 100%;
+  }
+  .column img{
+    width: 70%;
+    height: auto;
+  }
+  .close, .prev, .next{
+    font-size: 10vh;
+  }
+  .GalleryRow{
+    flex-direction: column;
+  }
+  .GalleryThumbnail, .GalleryThumbnail:hover{
+    width: 70%;
+    height: 50vh;
+  }
+  .Title{
+    font-size: 5vh;
+  }
+  .Hidden{
+    display: none;
+  }
+  footer{
+    height: 10vh;
+  }
+}
+
+
 }

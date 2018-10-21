@@ -1,5 +1,5 @@
 function openModal() {
-  document.getElementById('myModal').style.display = "block";
+  document.getElementById('myModal').style.display = "flex";
 }
 
 // Close the Modal
