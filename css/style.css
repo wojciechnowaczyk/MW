@@ -15,6 +15,20 @@ a:visited{
   color: #337AC3;
 }
 
+.MenuIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  z-index: 1100;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  color: #ffffff;
+  background-color: #337AC3;
+  padding: 20px;
+}
+
 .MainHeader {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
@@ -24,19 +38,6 @@ a:visited{
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.MenuIcon{
-  z-index: 1100;
-  position: fixed;
-  top: 50px;
-  right: 10px;
-  display:none;
-  color: #ffffff;
-  font-size: 30px;
-  background-color: #337AC3;
-  padding: 20px;
-  padding-bottom: 15px;
 }
 
 #MainVideo {
@@ -150,13 +151,6 @@ a:visited{
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 10px;
-}
-
-.NavbarMenu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .LogotypeWrapper {
@@ -655,18 +649,6 @@ footer a, footer a:visited{
   }
   .EventBox{
     height: 60%;
-  }
-  .NavbarMenu{
-    display: none;
-  }
-
-  .MenuIcon{
-    display: block;
-    font-size: 5vh;
-    margin-left: 3vh;
-    padding-left:4vh;
-    padding-right: 4vh;
-    padding-top: 3vh;
   }
   .CommunityBox{
     width: 25%;
