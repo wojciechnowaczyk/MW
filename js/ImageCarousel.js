@@ -9,6 +9,6 @@ function carousel() {
     }
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
+    x[Math.floor(Math.random() * x.length)].style.display = "block";
     setTimeout(carousel, 6000);
 }
