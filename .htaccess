@@ -1,0 +1,3 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^events/poznan.html.*$ http://demo.meetnight.pl/poznan [R=301,L]

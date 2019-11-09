@@ -181,6 +181,10 @@ a:visited{
   background-image: url('../assets/gallery/wroclaw0218/4.jpg');
 }
 
+#Poznan1218{
+  background-image: url('../assets/gallery/poznan1218/1.jpg');
+}
+
 .row{
   display: flex;
   align-items: center;

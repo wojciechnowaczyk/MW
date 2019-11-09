@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel='shortcut icon' type="image/png" href='../assets/img/logotypes/favicon.png' />
+  <title>Meetnight | Job Dates</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lekton&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../js/responsiveMenu.js"></script>
+  <script src="../js/TypingCarousel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129432399-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129432399-1');
+  </script>
+
+
+
+
+
+
+</head>
+<body>
+
+  <div class="MainHeader">
+    <img src="../assets/img/header/1.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/2.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/6.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/7.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/8.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/9.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/10.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/11.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/12.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/13.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/14.jpg" id="MainImage" class="ImageCarousel"/>
+    <img src="../assets/img/header/15.jpg" id="MainImage" class="ImageCarousel"/>
+        <div class="content">
+          <div class="LogotypeWrapper">
+            <div class="MeetnightLogotypeStyle" alt="Meetnight Logotype" >
+              <img src="../assets/img/logotypes/MeetnightLogo.png"/>
+            </div>
+          </div>
+          <a class="MenuIcon" onclick="menuBurger()" id="BurgerMenu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div class="ResponsiveMenu" id="ResponsiveMenu">
+            <div class="ResponsiveMenuButtonShowButton" id="ResponsiveButton" onclick="closeMenu()"><a href="../index.html">Home</a></div>
+            <div class="ResponsiveMenuButtonShowButton" id="ResponsiveButton" onclick="closeMenu()"><a href="../#AboutUs">About</a></div>
+            <div class="ResponsiveMenuButtonShowButton" id="ResponsiveButton" onclick="closeMenu()"><a href="../#Events">Events</a></div>
+            <div class="ResponsiveMenuButtonShowButton" id="ResponsiveButton" onclick="closeMenu()"><a href="./index.html">Job Dates</a></div>
+            <div class="ResponsiveMenuButtonShowButton" id="ResponsiveButton" onclick="closeMenu()"><a href="../gallery">Gallery</a></div>
+            <div class="ResponsiveMenuButtonShowButton" id="ResponsiveButton" onclick="closeMenu()"><a href="../#Contact">Contact</a></div>
+
+          </div>
+        </div>
+    </div>
+    <div class="JobDatesInstruction">
+      <h1 class="MainPageHeader">How does it work?</h1>
+      <div class="InstructionSliders" #InstructionSliders>
+        <div class="InstructionSlider">
+          <div class="InstructionText">1. Find the appropriate job offer (or offers) below</div>
+          <img src="../assets/img/icons/search.png" />
+        </div>
+        <div class="InstructionSlider">
+          <div class="InstructionText">2. Send us an email (jobdates@meetnight.pl) with information about postition you are interested in. Please attache CV or Linkedin link.</div>
+          <img src="../assets/img/icons/message.png" />
+        </div>
+        <div class="InstructionSlider">
+          <div class="InstructionText">3. Wait for our response. We will respond with the time of the appointment.</div>
+          <img src="../assets/img/icons/clock.png" />
+        </div>
+        <div class="InstructionSlider">
+          <div class="InstructionText">4. Come to our event 8.12 and meet with the company!</div>
+          <img src="../assets/img/icons/calendar.png" />
+        </div>
+      </div>
+    </div>
+    <div class="JobFilters">
+      <div class="FilterHeader">
+        Filters:
+      </div>
+      <div class="FilterRow">
+        <div class="FilterLeft">
+        <div class="FilterName">
+          Place:
+        </div>
+      </div>
+      <div class="FilterRight">
+        <div class="FilterPositionPlace"  place="gdansk">
+          Gdańsk
+        </div>
+        <div class="FilterPositionPlace"  place="poznan">
+          Poznań
+        </div>
+        <div class="FilterPositionPlace"  place="wroclaw">
+          Wrocław
+        </div>
+        <div class="FilterPositionPlace"  place="krakow">
+          Kraków
+        </div>
+      </div>
+    </div>
+      <div class="FilterRow">
+        <div class="FilterLeft">
+        <div class="FilterName">
+          Experience:
+        </div>
+      </div>
+        <div class="FilterRight">
+        <div class="FilterPositionExp" exp="junior">
+          Junior
+        </div>
+        <div class="FilterPositionExp" exp="mid">
+          Mid
+        </div>
+        <div class="FilterPositionExp" exp="senior">
+          Senior
+        </div>
+      </div>
+    </div>
+      <div class="FilterRow">
+        <div class="FilterLeft">
+        <div class="FilterName">
+          Skills:
+        </div>
+      </div>
+      <div class="FilterRight">
+        <div class="FilterPositionLang" lang="javascript">
+          JavaScript
+        </div>
+        <div class="FilterPositionLang" lang="php">
+          PHP
+        </div>
+        <div class="FilterPositionLang" lang="java">
+          Java
+        </div>
+        <div class="FilterPositionLang" lang="tester">
+          Tester
+        </div>
+        <div class="FilterPositionLang" lang="hr">
+          HR Specialist
+        </div>
+        <div class="FilterPositionLang" lang="project">
+          Project Manager
+        </div>
+        <div class="FilterPositionLang" lang="pr">
+          PR Specialist
+        </div>
+        <div class="FilterPositionLang" lang="c++">
+          C++
+        </div>
+        <div class="FilterPositionLang" lang="python">
+          Python
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="JobsRow">
+    <div class="FilterButtonRow">
+      <div class="FilterPosition" id=ShowAll>
+        Show all
+      </div>
+    </div>
+  </div>
+    <div class="JobsRow">
+    <div class="FilterButtonRow">
+      <div class="FilterPosition" id=Filter>
+        Filter
+      </div>
+    </div>
+    <div class="JobsRow" style="display: none">
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="c++">
+      <div class="EventMainHeader">
+        C++ Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          C++
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior/ Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Pruftechnik Technology
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Bachelor or master degree in computer science</li>
+            <li>Good understanding of object-oriented programming</li>
+            <li>Good command of spoken and written English</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        Your role: creating software used in machine diagnostics in industry, basing on C ++ and good software
+        engineering practices.
+      </div>
+      <div class="EventButton">
+        <a href="https://pruftechnik-technology.pl" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="JobBox" place="wroclaw" exp="mid" lang="javascript">
+      <div class="EventMainHeader">
+        FRONT-END Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          JavaScript
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Mid
+        </div>
+        <div class="DataRow">
+          <div class="JobData">
+            Company:
+          </div>
+          <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+            Pruftechnik Technology
+          </div>
+        </div>
+        <div class="DataRow">
+          <div class="JobData JobRequirements">
+            Requirements:
+          </div>
+          <div class="JobYears JobListRequirements">
+            <ol>
+            </br>
+              <li>Professional experience in front-end development (3 years min.)</li>
+              <li>Advanced knowledge of JavaScript /TypeScript/</li>
+              <li>Sound familiarity with Angular and RxJS</li>
+            </ol>
+          </div>
+        </div>
+        <div class="DataRow">
+          <div class="JobData">
+            Description:
+          </div>
+        </div>
+        <div class="JobDescription">
+          Your role: Development web frontend, connection of front-end to back-end interfaces, implementation of design
+          concepts
+        </div>
+      </div>
+      <div class="EventButton">
+        <a href="https://pruftechnik-technology.pl" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="JobBox" place="wroclaw" exp="mid" lang="java">
+      <div class="EventMainHeader">
+        Java Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          Java
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Pruftechnik Technology
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Bachelor or master degree in computer science</li>
+            <li>Minimum 3 year experience in JAVA projects</li>
+            <li>Practical knowledge of JEE, JAVA 8, Spring, Hibernate, Eclipse RCP</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        Your role: Creating software for diagnostics of industrial machines, basing on JAVA language and good software
+        engineering practices
+      </div>
+      <div class="EventButton">
+        <a href="https://pruftechnik-technology.pl" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="java">
+      <div class="EventMainHeader">
+        Java Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          Java
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior/Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Deviniti
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Biegła znajomość programowania w języku Java (JEE/J2EE) poparta praktyką</li>
+            <li>Bardzo dobra znajomość technologii webowych HTML, CSS, JavaScript</li>
+            <li>Dobra znajomość technologii Spring, Hibernate (Apache Struts 2, Spring, JPA/Hibernate)</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+Twoje zaangażowanie będzie ważne na każdym etapie tworzenia projektu zaczynając od analizy, poprzez udział w projektowaniu rozwiązań, przez ich implementację, wdrożenie, support oraz dalszy rozwój aplikacji.
+      </div>
+      <div class="EventButton">
+        <a href="https://deviniti.com/pl/kariera/" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="javascript">
+      <div class="EventMainHeader">
+        Frontend Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          JavaScript
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior/ Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Deviniti
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Min. 2 lata doświadczenia z JavaScript,</li>
+            <li>Biegłość w technologiach frontendowych jak HTML5, CSS3,</li>
+            <li>Doświadczenie w pracy z Git, Grunt, Node.js i RESTful APIs,</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+Jako Programista Frontend dołączysz do zespołu, który na co dzień tworzy autorskie aplikacje do Jiry m.in. dla Ferrari, Warner Bros, SONY, Apple, czy NASA.
+      </div>
+      <div class="EventButton">
+        <a href="https://deviniti.com/pl/kariera/" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="tester">
+      <div class="EventMainHeader">
+        Tester Manualny
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          Tester
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Deviniti
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Wykształcenie wyższe lub w trakcie studiów – preferowane kierunki informatyczne</li>
+            <li>Znajomość relacyjnych baz danych</li>
+            <li>Znajomość języka zapytań SQL</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        Zakres obowiązków:
+        <ul>
+          <li>Przygotowywanie przypadków testowych</li>
+          <li>Przeprowadzanie testów i dokumentowanie ich wyników</li>
+          <li>Testowanie zgodności oprogramowania z założeniami, specyfikacjami</li>
+          <li>Przeprowadzanie testów odbioru (testów akceptacyjnych)</li>
+        </ul>
+      </div>
+      <div class="EventButton">
+        <a href="https://deviniti.com/pl/kariera/" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="php">
+      <div class="EventMainHeader">
+        Magento Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          PHP / Magento 2
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior/ Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Wroclaw" id="Wroclaw">
+          Ework Group
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>PHP</li>
+            <li>Magento 2</li>
+            <li>SQL (MySQL, Oracle, PostgreSQL)</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        The analyst / developer’s role is to design, code, test, and analyze software programs and applications. This includes researching, designing, documenting, and modifying software specifications through production lifecycle. The software developer will also analyze and amend software errors in a timely and accurate fashion and provide status reports where required.
+      </div>
+      <div class="EventButton">
+        <a href="https://www.eworkgroup.com/pl" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="">
+      <div class="EventMainHeader">
+        Quality Assurance
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          -
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior/ Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Poznan" id="Poznan">
+          Ework Group
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>2+ years of experience</li>
+            <li>Agile methodology, understanding and mindset (QA’s place in it)</li>
+            <li>At least ISTQB Foundation level</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        Assignment description:
+      <li>Take part of the Renault Trucks DMS solution (Dealer Management System) future and challenges!</li>
+      <li>RT-DMS is a solution deployed for Renault Trucks dealers over several countries in Europe (France, Belgium, UK, Italy, Spain and Portugal) and Africa (Morocco, Algeria)</li>
+      <li>Technical features: Java, Spring, Swing, Hibernate, Angular</li>
+
+    </div>
+      <div class="EventButton">
+        <a href="https://www.eworkgroup.com/pl" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="javascript">
+      <div class="EventMainHeader">
+        Javascript Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          Javascript
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Poznań/ Wrocław/ Toruń
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior/ Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Poznan" id="Poznan">
+          SPOC
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>2 lata doświadczenia w programowaniu w języku JavaScript ES5, mile widziana znajomość ES6</li>
+            <li>dobrej wiedzy praktycznej w programowaniu z wykorzystaniem bibliotek JavaScript – AngularJS, jQuery, mile widziany React,</li>
+            <li>znajomości angielskiego w stopniu pozwalającym na swobodną komunikację (również wtedy, kiedy gadka się nie klei)</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        Szukamy nowych JavaScript Developerów poziomu regular! Co będziesz robił/a? Po odpowiednim szkoleniu i wdrożeniu (jeśli będziesz tego potrzebował/a), będziesz brał/a aktywny udział we wdrożeniach platformy ServiceNow dla międzynarodowych Klientów. Analizował/a wymagania, projektował/a rozwiązania, przygotowywał/a dokumentację, realizował/a integracje, tworzył/a dedykowane aplikacje mobilne. Układ jest taki: duzi Klienci, duże projekty i Ty – cały/a na biało lub w t-shircie z ulubionym superbohaterem.
+   </div>
+      <div class="EventButton">
+        <a href="https://spoc.pl/join-us/" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="javascript">
+      <div class="EventMainHeader">
+        Junior JavaScript Developer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          JavaScript
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Poznań/ Wrocław/ Toruń
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Poznan" id="Poznan">
+          SPOC
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>dobrej wiedzy praktycznej w programowaniu w języku JavaScript ES5 – mimo stanowiska juniora – to dla nas podstawa</li>
+            <li>znajomość innych bibliotek JavaScript będzie dodatkowym atutem</li>
+            <li>wiedzy praktycznej z zakresu tworzenia stron HTML5, CSS, Bootstrap,</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+        Co będziesz robił/a? Po odpowiednim szkoleniu i wdrożeniu, będziesz brał/a aktywny udział we wdrożeniach platformy ServiceNow dla międzynarodowych Klientów. Układ jest taki: duzi Klienci, duże projekty i Ty – cały/a na biało lub w t-shircie z ulubionym superbohaterem. 
+    </div>
+      <div class="EventButton">
+        <a href="https://spoc.pl/join-us/" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="c++">
+      <div class="EventMainHeader">
+         C++ Engineer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          C++
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior / Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Poznan" id="Poznan">
+           Nokia
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Master’s or Bachelor’s degree in Engineering, Telecommunications, Computer Science, Software Technology or equivalent education</li>
+            <li>strong coding skills</li>
+            <li>expertise in algorithm optimization, code profiling and in analysis of memory usage violations</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+    You will be responsible for software design, implementation, analyzing and solving complex engineering problems and hitches in radio technologies area. You will create and review requirements for functional, design and interface specifications based on system and HW.
+  </div>
+      <div class="EventButton">
+        <a href="https://nokiawroclaw.pl/oferta-pracy/c-embedded-engineer/" target="_blank">More</a>
+      </div>
+    </div>
+
+    <div class="JobBox" place="wroclaw" exp="junior" lang="python">
+      <div class="EventMainHeader">
+        Integration and Testing Engineer
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Language:
+        </div>
+        <div class="JobLanguage">
+          Python
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Place:
+        </div>
+        <div class="JobPlace" value="Poznan">
+          Wrocław
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Experience:
+        </div>
+        <div class="JobYears">
+          Junior / Mid
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Company:
+        </div>
+        <div class="JobPlace" value="Poznan" id="Poznan">
+          Nokia
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData JobRequirements">
+          Requirements:
+        </div>
+        <div class="JobYears JobListRequirements">
+          <ol>
+          </br>
+            <li>Master’s or Bachelor’s degree in Engineering, Telecommunications, Computer Science, Software Technology or equivalent education</li>
+            <li>knowledge of software and/or hardware testing processes and tools (ISTQB is an advantage)</li>
+            <li>analytical thinking</li>
+          </ol>
+        </div>
+      </div>
+      <div class="DataRow">
+        <div class="JobData">
+          Description:
+        </div>
+      </div>
+      <div class="JobDescription">
+     You will be responsible for debugging, isolation and resolving of various issues. You will have a chance to apply knowledge and experience to determine failure’s root cause. In your role, you will work in close co-operation to local project people, as well as remote stakeholders. You will interact with telecommunication systems both SW and/or HW areas depending on projects.
+    </div>
+      <div class="EventButton">
+        <a href="https://nokiawroclaw.pl/oferta-pracy/integration-and-testing-engineer/" target="_blank">More</a>
+      </div>
+    </div>
+
+
+</div>
+</div>
+<footer>
+    <a href="https://www.linkedin.com/in/wojciech-nowaczyk-a1506211a/" target="_blank">Made by Wojciech Nowaczyk</a>
+</footer>
+  <script src="../js/ImageCarousel.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/filtering.js"></script>
+  <script src="../js/jobdates.js"></script>
+</body>
+</html>

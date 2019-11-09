@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  function showAll(){
+    $('#ShowAll').click(function(){
+      $('.JobBox').show();
+    });
+  }
   function filtering(){
     data = '';
     var buttons = $('.FilterPositionPlace');
@@ -39,4 +44,5 @@ $(document).ready(function(){
       })
     }
   filtering();
+  showAll();
 })
